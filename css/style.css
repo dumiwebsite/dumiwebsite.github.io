@@ -12264,3 +12264,10 @@ ul#slide-list{
 	    padding: 5px;
 	}
 	}
+
+	#text-carousel .item {
+		height: 150px; /* Adjust the height as needed */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
