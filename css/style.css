@@ -12273,7 +12273,8 @@ ul#slide-list{
 	}
 
 	#text-carousel .logo {
-		max-width: 30rem;
-		max-height: 30rem;
+		height: 10rem;
+		width: auto;
+		max-width: 70vw;
 		object-fit: contain; /* Keeps the aspect ratio intact */
 	}
