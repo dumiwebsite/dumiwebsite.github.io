@@ -6022,7 +6022,7 @@ video, object {
 }
 
 .de-video-container {
-    position: absolute; /* Keeps the container in place */
+    position: fixed; /* Keeps the container in place */
     top: 0;
     left: 0;
     width: 100%; /* Full width of the viewport */
