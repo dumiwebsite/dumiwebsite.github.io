@@ -6020,7 +6020,7 @@ min-height:100%;
 .de-video-container{
 top:0%;
 left:0%;
-height:5000px;
+height:500px;
 width:100%;
 overflow: hidden;
 }
@@ -12128,8 +12128,8 @@ ul#slide-list{
 	}
 	
 	.text-slider{	
-	font-size:5vh;
-	letter-spacing: 1vh;
+	font-size:30px;
+	letter-spacing: 5px;
 	}
 	
 	.schedule-item .sc-time {
