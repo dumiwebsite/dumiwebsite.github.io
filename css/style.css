@@ -6036,7 +6036,7 @@ z-index:10;
 position:absolute;
 width:100%;
 min-height:100%;
-background:rgba(0,0,0,.5);
+background:rgba(0,0,0,.3);
 }
 
 .de-video-overlay.t30{
@@ -12273,7 +12273,7 @@ ul#slide-list{
 	}
 
 	#text-carousel .logo {
-		max-width: 118%;
-		max-height: 118%;
+		max-width: 30rem;
+		max-height: 30rem;
 		object-fit: contain; /* Keeps the aspect ratio intact */
 	}
