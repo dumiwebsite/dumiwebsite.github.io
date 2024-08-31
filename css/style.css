@@ -6014,13 +6014,13 @@ video, object {
 display:inline-block;
 vertical-align:baseline;
 min-width:100%;
-min-height:100vh;
+min-height:100%;
 }
 
 .de-video-container{
 top:0%;
 left:0%;
-height:500px;
+height:5000px;
 width:100%;
 overflow: hidden;
 }
@@ -6035,7 +6035,7 @@ z-index:10;
 .de-video-overlay{
 position:absolute;
 width:100%;
-min-height:100vh;
+min-height:100%;
 background:rgba(0,0,0,.3);
 }
 
