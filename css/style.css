@@ -6011,24 +6011,30 @@ transition:.2s;
 /* video */
 /* ================================================== */
 video, object {
-display:inline-block;
-vertical-align:baseline;
-min-width:100%;
-min-height:100%;
+    display: block; /* Ensures no inline spacing */
+    vertical-align: middle; /* Centers the video vertically */
+    width: 100%; /* Covers the full width */
+    height: 100%; /* Covers the height set by JavaScript */
+    object-fit: cover; /* Maintains aspect while covering the area */
+    position: absolute; /* Allows precise positioning */
+    top: 0;
+    left: 0;
 }
 
-.de-video-container{
-top:0%;
-left:0%;
-height:500px;
-width:100%;
-overflow: hidden;
+.de-video-container {
+    position: absolute; /* Keeps the container in place */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    height: 100vh; /* Height might be dynamically adjusted if necessary */
+    overflow: hidden; /* Hides anything outside the container */
+    z-index: -1; /* Keeps the video behind other content */
 }
 
-.de-video-content{
-width:100%;
-position:absolute;
-z-index:10;
+.de-video-content {
+    position: absolute;
+    z-index: 10; /* Ensures content is above the video */
+    width: 100%; /* Ensures it covers the container width */
 }
 
 
