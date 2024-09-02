@@ -6020,7 +6020,7 @@ min-height:100%;
 .de-video-container{
 top:0%;
 left:0%;
-height:500px;
+height:650px;
 width:100%;
 overflow: hidden;
 }
@@ -6030,7 +6030,6 @@ width:100%;
 position:absolute;
 z-index:10;
 }
-
 
 .de-video-overlay{
 position:absolute;
