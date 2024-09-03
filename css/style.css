@@ -6203,6 +6203,13 @@ background:#555;
   max-width: 100%;
   height: auto;
 }
+
+.video-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+  }
+
 .img-rounded {
   border-radius: 6px;
 }
@@ -12276,4 +12283,13 @@ ul#slide-list{
 		width: auto;
 		max-width: 70vw;
 		object-fit: contain; /* Keeps the aspect ratio intact */
+	}
+
+.footer-text {
+	display: flex;
+	justify-content: space-between
+}
+
+.no-margin {
+	padding-bottom: 0;
 	}
