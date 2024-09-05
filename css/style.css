@@ -12293,3 +12293,25 @@ ul#slide-list{
 .no-margin {
 	padding-bottom: 0;
 	}
+
+@media (max-width: 768px) {
+	.mobile-disappear {
+		display: none !important;
+	}
+}
+
+.section-testimonial{ background:url(../images/background/bg-3.jpg) top fixed}
+#view-all-projects, #call-to-action{padding:60px 0 60px 0;}
+.variable-padding{padding-top:50px}
+.radio-img{flex: 0 0 10%; padding: 5px; box-sizing: border-box;}
+
+@media (max-width: 768px) {
+.section-testimonial{ background:none top fixed;}
+#view-all-projects, #call-to-action{padding:20px 0 20px 0;}
+.no-bottom-mobile{margin-bottom:0px !important;}
+.text-left-mobile{text-align:left;}
+.variable-padding{padding-top:0px;}
+#contact_form .radio-img input[type="checkbox"] + label{
+	width: 105px;
+}
+}
