@@ -12327,3 +12327,7 @@ ul#slide-list{
     padding: 30px 0 30px 0
 }
 }
+
+@media (min-width: 769px) {
+.desktop-hide{display:none;}
+}
