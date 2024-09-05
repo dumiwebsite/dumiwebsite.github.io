@@ -107,58 +107,53 @@
                 <div class="row">
 
                     <div class="col-md-8 offset-md-2">
-                        <form name="contactForm" id='contact_form' method="post">
+                        <form name="contactForm" id='contact_form'
+						action="https://formspree.io/f/xwpeznrl"
+						method="POST">
                             <div id="step-1" class="row">
                             	<div class="col-md-12 mb30">
                             		<h4><i class="fa fa-home id-color"></i>What works are you looking to carry out?</h4>
 
 									<div class="de_form de_radio" style="display: flex; flex-wrap: wrap; margin: 0 -5px;">
 										<div class="radio-img" style="flex: 0 0 10%; padding: 5px; box-sizing: border-box;">
-											<input id="radio-1a" name="Property_Type[]" type="checkbox" value="Renovation" checked="checked">
+											<input id="radio-1a" name="Type[]" type="checkbox" value="Renovation" checked="checked">
 											<label for="radio-1a"><img src="images/square/pic_1.png">Renovation</label>
 										</div>
 									
 										<div class="radio-img" style="flex: 0 0 10%; padding: 5px; box-sizing: border-box;">
-											<input id="radio-1b" name="Property_Type[]" type="checkbox" value="Extension">
+											<input id="radio-1b" name="Type[]" type="checkbox" value="Extension">
 											<label for="radio-1b"><img src="images/square/pic_2.png">Extension</label>
 										</div>
 									
 										<div class="radio-img" style="flex: 0 0 10%; padding: 5px; box-sizing: border-box;">
-											<input id="radio-1c" name="Property_Type[]" type="checkbox" value="Attic Conversion">
+											<input id="radio-1c" name="Type[]" type="checkbox" value="Attic Conversion">
 											<label for="radio-1c"><img src="images/square/pic_3.png">Attic Conversion</label>
 										</div>
 									
 										<div class="radio-img" style="flex: 0 0 10%; padding: 5px; box-sizing: border-box;">
-											<input id="radio-1d" name="Property_Type[]" type="checkbox" value="Studio">
+											<input id="radio-1d" name="Type[]" type="checkbox" value="Studio">
 											<label for="radio-1d"><img src="images/square/pic_4.png">Backyard Studio</label>
 										</div>
 									
 										<div class="radio-img" style="flex: 0 0 10%; padding: 5px; box-sizing: border-box;">
-											<input id="radio-1e" name="Property_Type[]" type="checkbox" value="Outdoor Space">
+											<input id="radio-1e" name="Type[]" type="checkbox" value="Outdoor Space">
 											<label for="radio-1e"><img src="images/square/pic_5.png">Outdoor Space</label>
 										</div>
 									
 										<div class="radio-img" style="flex: 0 0 10%; padding: 5px; box-sizing: border-box;">
-											<input id="radio-1f" name="Property_Type[]" type="checkbox" value="Enclosures">
+											<input id="radio-1f" name="Type[]" type="checkbox" value="Enclosures">
 											<label for="radio-1f"><img src="images/square/pic_6.png">Enclosures</label>
 										</div>
 									</div>
                             	</div>
 
                             	<div class="col-md-6 mb10">
-                            		<h4><i class="fa fa-arrows-alt id-color"></i>Total area size you want to renovate</h4>
+                            		<h4><i class="fa fa-arrows-alt id-color"></i>Approximate area size</h4>
                             		<div class="row">
-                            			<div class="col-md-6">
-                            				<input type='text' name='Area Size' id='area-size' class="form-control" placeholder="Area Size" required>
+                            			<div class="col-md-12">
+                            				<input type='text' name='Area Size' id='area-size' class="form-control" placeholder="Square metres" required>
                             			</div>
 
-                            			<div class="col-md-6">
-                            				<select name="Unit Size" id="unit_size" value="" class="form-control">
-                            				  <option value="sqft">Square Feet(sqft)</option>
-                            				  <option value="m">meter(m)</option>
-                            				  <option value="ft">Feet(ft)</option>
-                            				</select>
-                            			</div>
                             		</div>
                             	</div>
 
@@ -167,9 +162,9 @@
                             		<div class="row">
                             			<div class="col-md-12">
                             				<select name="Budget" id="budget" value="" class="form-control">
-                            				  <option value="Budget Friendly">Budget Friendly</option>
-                            				  <option value="Mid Range">Mid Range</option>
-                            				  <option value="High End">High End</option>
+                            				  <option value="Economic">Economic</option>
+                            				  <option value="Mid-Range">Mid-Range</option>
+                            				  <option value="High-End">High-End</option>
                             				</select>
                             			</div>
                             		</div>
@@ -184,17 +179,17 @@
                                 <div class="col-md-6">
                                     <div id='name_error' class='error'>Please enter your name.</div>
                                     <div>
-                                        <input type='text' name='Name' id='name' class="form-control" placeholder="Your Name" required>
+                                        <input type='text' name='Name' id='name' class="form-control" placeholder="Name" required>
                                     </div>
 
-                                    <div id='email_error' class='error'>Please enter your valid E-mail ID.</div>
+                                    <div id='email_error' class='error'>Please enter a valid e-mail.</div>
                                     <div>
-                                        <input type='email' name='Email' id='email' class="form-control" placeholder="Your Email" required>
+                                        <input type='email' name='Email' id='email' class="form-control" placeholder="Email" required>
                                     </div>
 
                                     <div id='phone_error' class='error'>Please enter your phone number.</div>
                                     <div>
-                                        <input type='text' name='phone' id='phone' class="form-control" placeholder="Your Phone" required>
+                                        <input type='text' name='phone' id='phone' class="form-control" placeholder="Phone" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
