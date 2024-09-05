@@ -12314,4 +12314,16 @@ ul#slide-list{
 #contact_form .radio-img input[type="checkbox"] + label{
 	width: 105px;
 }
+.order-mobile3 {
+    order: 3;
+}
+.order-mobile2 {
+    order: 2;
+}
+.order-mobile1 {
+    order: 1;
+}
+.project-view {
+    padding: 30px 0 30px 0
+}
 }
