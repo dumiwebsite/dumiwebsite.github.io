@@ -12294,6 +12294,15 @@ ul#slide-list{
 	padding-bottom: 0;
 	}
 
+.img-crop {
+  width: 100%;
+  max-height: 400px;
+  object-position: 50% 55%;
+  object-fit: cover;
+  overflow: hidden;
+
+}
+
 @media (max-width: 768px) {
 	.mobile-disappear {
 		display: none !important;
