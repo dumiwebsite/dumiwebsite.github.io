@@ -12337,7 +12337,7 @@ ul#slide-list{
     padding: 30px 0 30px 0
 }
 .img-crop {
-	max-height: 200px;
+	max-height: 25vh;
 }
 .delta {
 	content: url('/images/delta_large.png');
