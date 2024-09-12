@@ -12303,6 +12303,15 @@ ul#slide-list{
 
 }
 
+.img-crop-index {
+	width: 100%;
+	max-height: 400px;
+	object-position: 50% 50%;
+	object-fit: cover;
+	overflow: hidden;
+  
+  }
+
 @media (max-width: 768px) {
 	.mobile-disappear {
 		display: none !important;
@@ -12336,7 +12345,7 @@ ul#slide-list{
 .project-view {
     padding: 30px 0 30px 0
 }
-.img-crop {
+.img-crop-index {
 	max-height: 25vh;
 }
 .delta {
