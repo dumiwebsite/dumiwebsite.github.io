@@ -4468,7 +4468,7 @@ img.mfp-img {
 
 .twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after {
   width: 3px;
-  height: 9999px;
+  height: 100%;
   left: 50%;
   margin-left: -1.5px; }
 
