@@ -12320,6 +12320,7 @@ ul#slide-list{
 .no-bottom-mobile{margin-bottom:0px !important;}
 .text-left-mobile{text-align:left;}
 .variable-padding{padding-top:0px;}
+.no-padding-bottom-top{padding-top:0px !important; padding-bottom: 0px!important;}
 #contact_form .radio-img input[type="checkbox"] + label{
 	width: 105px;
 }
@@ -12334,6 +12335,9 @@ ul#slide-list{
 }
 .project-view {
     padding: 30px 0 30px 0
+}
+.img-crop {
+	max-height: 200px;
 }
 }
 
