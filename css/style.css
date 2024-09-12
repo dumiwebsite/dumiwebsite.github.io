@@ -12339,6 +12339,10 @@ ul#slide-list{
 .img-crop {
 	max-height: 200px;
 }
+.delta {
+	content: url('/images/delta_large.png');
+	height: 50px;
+}
 }
 
 @media (min-width: 769px) {
