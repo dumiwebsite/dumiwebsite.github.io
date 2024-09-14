@@ -90,8 +90,8 @@
         <div id="content" class="no-bottom no-top">
 
             <section class="full-height no-padding" style="position: relative; overflow: hidden;">
-                <video autoplay loop muted playsinline style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 100%; width: auto; height: auto;">
-                    <source src="video/intro.mp4" type="video/mp4">
+                <video id="responsiveVideo" autoplay loop muted playsinline style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 100%; width: auto; height: auto;">
+                    <source id="videoSource" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div class="de-video-container">
@@ -497,6 +497,26 @@
     <!-- SLIDER REVOLUTION SCRIPTS  -->
     <script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            var videoSource = document.getElementById('videoSource');
+            var video = document.getElementById('responsiveVideo');
+
+            // Function to change video source
+            function setVideoSource() {
+                if (window.innerWidth <= 425) {
+                    videoSource.src = 'video/intro_mobile.mp4';
+                } else {
+                    videoSource.src = 'video/intro_desktop.mp4';
+                }
+                video.load();  // Important to load the new video source
+            }
+
+            // Call setVideoSource on page load
+            setVideoSource();
+        });
+    </script>
 
 	<script>
     $(window).on("load", function(){
