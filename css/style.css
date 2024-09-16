@@ -12361,3 +12361,11 @@ ul#slide-list{
 @media (min-width: 769px) {
 .desktop-hide{display:none;}
 }
+
+
+/* Disable all hover effects for touch devices */
+@media (hover: none) {
+    *:hover {
+        all: unset;
+    }
+}
