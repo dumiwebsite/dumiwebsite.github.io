@@ -12365,10 +12365,15 @@ ul#slide-list{
 
 /* Disable hover effects on touch devices */
 @media (hover: none) {
-    .picframe:hover .overlay,
-    .picframe:hover .overlay-v,
     .picframe:hover img {
         transform: none;
         opacity: 1;
     }
+	.picframe:hover .overlay{
+		opacity: 0;
+	}
+	.picframe:hover .overlay-v{
+		transform: none;
+		opacity:0;
+	}
 }
