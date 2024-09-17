@@ -511,7 +511,20 @@
         });
     </script>
 
+    <script>
+            function video_autosize() {
+            jQuery('.de-video-container').each(function () {
+                var height_1 = jQuery(this).css("height");
+                var height_2 = jQuery(this).find(".de-video-content").css("height");
+                var newheight = (height_1.substring(0, height_1.length - 2) - height_2.substring(0, height_2.length - 2)) / 2;
+                jQuery(this).find('.de-video-overlay').css("height", height_1);
+                jQuery(this).find(".de-video-content").animate({ 'margin-top': newheight }, 'fast');
+            });
+        }
+    </script>
+
     <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
 	<script src="js/jquery.event.move.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>	
 	
