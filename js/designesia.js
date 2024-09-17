@@ -391,7 +391,7 @@ jQuery(document).ready(function () {
             var height_2 = jQuery(this).find(".de-video-content").css("height");
             var newheight = (height_1.substring(0, height_1.length - 2) - height_2.substring(0, height_2.length - 2)) / 2;
             jQuery(this).find('.de-video-overlay').css("height", height_1);
-            jQuery(this).find(".de-video-content").animate({ 'margin-top': newheight }, 200);
+            jQuery(this).find(".de-video-content").animate({ 'margin-top': newheight }, 1000);
         });
     }
 
