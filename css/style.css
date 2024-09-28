@@ -12312,6 +12312,29 @@ ul#slide-list{
   
   }
 
+  .share-button {
+	padding: 1px 15px;
+	font-size: 15px;
+	cursor: pointer;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.7); /* Ensure this is transparent, not 'none' */
+	color: black;
+	border-radius: 20px;
+	position: fixed;
+	left: 15px;
+	bottom: 15px;
+	transition: background-color 0.3s; /* Animation for background color change */
+	z-index: 1000;       /* High value to ensure it's on top */
+
+  }
+  
+  
+  /* Hover color for light theme toggle */
+  .share-button:active{
+	background-color: var(--tag-hover);
+	color: blue;
+  }
+
 @media (max-width: 768px) {
 	.mobile-disappear {
 		display: none !important;
@@ -12360,6 +12383,7 @@ ul#slide-list{
 
 @media (min-width: 769px) {
 .desktop-hide{display:none;}
+.share-button {display:none;}
 }
 
 
