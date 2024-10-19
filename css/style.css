@@ -12382,8 +12382,9 @@ ul#slide-list{
 }
 
 @media (min-width: 769px) {
-.desktop-hide{display:none;}
+.desktop-hide{display:none !important;}
 .share-button {display:none;}
+.margin-right-desktop {margin-right: 20px;}
 }
 
 
