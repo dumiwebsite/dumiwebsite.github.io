@@ -12376,7 +12376,7 @@ ul#slide-list{
 	content: url('/images/delta_large.png');
 	height: 50px;
 }
-#subheader{
+.page-contact #subheader{
 	background:url(../images/background/contact_mobile.jpg) !important;
 	}
 }
