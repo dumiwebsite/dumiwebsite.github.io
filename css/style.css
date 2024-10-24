@@ -12318,7 +12318,7 @@ ul#slide-list{
 	border-radius: 20px;
 	position: fixed;
 	left: 15px;
-	bottom: 40px;
+	bottom: 15px;
 	transition: background-color 0.3s; /* Animation for background color change */
 	z-index: 1000;       /* High value to ensure it's on top */
 
