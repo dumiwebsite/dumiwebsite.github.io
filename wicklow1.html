@@ -490,14 +490,17 @@
             <div class="subfooter">
                 <div class="container">
                     <div class="footer-text">
-                        <div class="col-md-6 no-margin">
+                        <div class="col-md-6 no-margin mobile-disappear">
                             &copy; Copyright <span id="currentYear"></span> - Delta Construct
                         </div>
-                        <div class="col-md-6 no-margin text-right">
-                            <div class="social-icons">
-								<a href="https://www.instagram.com/deltaconstruct.ie/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://www.facebook.com/deltaconstruct.ie/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="https://www.youtube.com/@deltaconstruct5503" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <div class="col-md-6 no-margin desktop-hide" style="font-size:3.5vw">
+                            </span> Delta Construct </span> <span id="currentYear_mobile"></span> &copy;
+                        </div>
+                        <div class="col-md-6 text-right no-margin">
+                            <div style="padding-right:50px;">
+								<a href="https://www.instagram.com/deltaconstruct.ie/" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 20px; padding-right:20px;"></i></a>
+                                <a href="https://www.facebook.com/deltaconstruct.ie/" target="_blank"><i class="fa-brands fa-facebook-f" style="font-size: 20px; padding-right:20px;"></i></a>
+                                <a href="https://www.youtube.com/@deltaconstruct5503" target="_blank"><i class="fa-brands fa-youtube" style="font-size: 20px;"></i></a>
                             </div>
                         </div>
                     </div>
@@ -533,6 +536,10 @@
 
     <script>
     document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+    document.getElementById('currentYear_mobile').textContent = new Date().getFullYear();
     </script>
 
 </body>

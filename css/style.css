@@ -12370,7 +12370,7 @@ ul#slide-list{
 	max-height: 25vh;
 }
 .delta {
-	content: url('/images/delta_large.png');
+	content: url('../images/delta_large.png');
 	height: 50px;
 }
 .page-contact #subheader{
