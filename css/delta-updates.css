@@ -111,7 +111,7 @@ footer .footer-hours strong { display: inline-block; min-width: 92px; font-weigh
 	.project-title + .project-view { padding-top: 16px; }
 }
 @media only screen and (max-width: 767px) {
-	.project-title h1 { font-size: 21px; letter-spacing: 3px; }
+	.project-title h1 { font-size: 21px; letter-spacing: 3px; text-align: left; padding-left: 20px; }
 }
 
 /* Service pages (R351): built from the site's own parts: section titles and separators as on the
