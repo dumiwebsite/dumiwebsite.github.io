@@ -1,43 +1,5 @@
 /* Delta Construct: updates by Jump Web Design (23 November 2026). Loaded after the theme's own CSS. */
 
-/* Section titles that became h2 (one h1 per page) keep the look they had as h1. */
-h2.h1-look {
-	display: block;
-	font-family: "Dosis", Arial, Helvetica, sans-serif;
-	font-size: 28px;
-	font-weight: 300;
-	line-height: 1.2em;
-	letter-spacing: 5px;
-	text-transform: uppercase;
-	color: #eceff3;
-	text-align: center;
-	margin: 0;
-}
-
-/* The line under the rotating words on the home page's video. */
-.hero-h1 {
-	font-family: "Dosis", Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.6;
-	letter-spacing: 4px;
-	text-transform: uppercase;
-	color: #fff;
-	margin: 26px 0 0;
-	text-shadow: 0 1px 10px rgba(0, 0, 0, .65);
-}
-.hero-h1 .hero-h1-sub {
-	display: block;
-	font-size: 13px;
-	letter-spacing: 3px;
-	color: rgba(255, 255, 255, .88);
-	margin-top: 6px;
-}
-@media only screen and (max-width: 767px) {
-	.hero-h1 { font-size: 14px; letter-spacing: 3px; margin-top: 18px; padding: 0 24px; }
-	.hero-h1 .hero-h1-sub { font-size: 11px; letter-spacing: 2px; line-height: 1.7; }
-}
-
 /* Call button in the header on phones and tablets (where the menu button shows). */
 .header-call { display: none; }
 @media only screen and (max-width: 992px) {
@@ -144,44 +106,71 @@ footer .footer-hours strong { display: inline-block; min-width: 92px; font-weigh
 .project-title { padding: 116px 0 0; }
 .project-title + .project-view { padding-top: 36px; }
 .project-title h1 { font-size: 26px; }
-.project-title p { text-align: center; margin: 10px 0 0; color: #9a9a9a; letter-spacing: 1px; }
-.project-title p span { white-space: nowrap; }
 @media only screen and (max-width: 992px) {
 	.project-title { padding: 26px 0 0; }
 	.project-title + .project-view { padding-top: 16px; }
 }
 @media only screen and (max-width: 767px) {
 	.project-title h1 { font-size: 21px; letter-spacing: 3px; }
-	.project-title p { font-size: 13px; line-height: 1.7; padding: 0 10px; }
 }
 
-/* Service pages. */
-.service-hero { position: relative; overflow: hidden; padding: 160px 0 70px; background: #111; }
+/* Service pages (R351): built from the site's own parts: section titles and separators as on the
+   home page, its three-across service boxes, its quote boxes, its before-and-after slider. */
+.service-hero { position: relative; overflow: hidden; padding: 170px 0 80px; background: #111; }
 .service-hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
-.service-hero:before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(10, 10, 10, .62) 0%, rgba(10, 10, 10, .8) 100%); }
+.service-hero:before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(10, 10, 10, .82) 0%, rgba(10, 10, 10, .55) 55%, rgba(10, 10, 10, .25) 100%); }
 .service-hero .container { position: relative; z-index: 2; }
-.service-hero h1 { text-align: left; font-size: 34px; letter-spacing: 5px; color: #fff; }
-.service-hero .lead { max-width: 640px; margin: 18px 0 26px; font-size: 17px; line-height: 1.7; color: #e6e6e6; }
-.service-hero .crumb { float: none; margin: 0 0 18px; padding: 0; }
+.service-hero h1 { text-align: left; font-size: 36px; letter-spacing: 5px; color: #fff; }
+.service-hero .lead { max-width: 600px; margin: 18px 0 28px; font-size: 17px; line-height: 1.7; color: #f0f0f0; }
 .service-hero .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-.service-hero .hero-rating { margin-top: 22px; font-size: 14px; color: #e6e6e6; }
+.service-hero .hero-rating { display: inline-block; margin-top: 24px; font-size: 14px; color: #f0f0f0; text-decoration: none; }
 .service-hero .hero-rating .stars { color: #FAB702; letter-spacing: 2px; margin-right: 8px; }
-.btn-call { display: inline-block; padding: 9px 20px; border-radius: 3px; background: #FAB702; color: #111 !important; font-weight: 600; letter-spacing: 1px; text-decoration: none !important; }
+.service-hero .hero-rating u { text-underline-offset: 3px; }
+.btn-call { display: inline-block; padding: 9px 22px; border-radius: 3px; background: #FAB702; color: #111 !important; font-weight: 600; letter-spacing: 1px; text-decoration: none !important; }
 @media only screen and (max-width: 767px) {
-	.service-hero { padding: 110px 0 44px; }
-	.service-hero h1 { font-size: 24px; letter-spacing: 3px; }
+	.service-hero { padding: 120px 0 50px; }
+	.service-hero:before { background: linear-gradient(180deg, rgba(10, 10, 10, .6) 0%, rgba(10, 10, 10, .78) 100%); }
+	.service-hero h1 { font-size: 25px; letter-spacing: 3px; }
 	.service-hero .lead { font-size: 15px; }
 }
-.service-section { padding: 70px 0; }
-.service-section.alt { background: #1e1f22; }
-.service-section h2 { display: block; font-family: "Dosis", Arial, Helvetica, sans-serif; font-weight: 300; font-size: 24px; letter-spacing: 4px; text-transform: uppercase; color: #eceff3; margin-bottom: 22px; }
-.service-section h2.center { text-align: center; }
-.service-section p { font-size: 15px; line-height: 1.85; }
-@media only screen and (max-width: 767px) {
-	.service-section { padding: 46px 0; }
-	.service-section h2 { font-size: 20px; letter-spacing: 3px; }
+
+/* Section titles: the home page's look, as h2. */
+h2.section-title {
+	display: block;
+	font-family: "Dosis", Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 1.25em;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #eceff3;
+	text-align: center;
+	margin: 0;
 }
-ul.check-list { list-style: none; margin: 0 0 10px; padding: 0; }
+h2.section-title.left { text-align: left; font-size: 24px; letter-spacing: 4px; margin-bottom: 22px; }
+@media only screen and (max-width: 767px) {
+	h2.section-title { font-size: 22px; letter-spacing: 3px; }
+	h2.section-title.left { font-size: 20px; }
+	.service-page section { padding: 56px 0; }
+}
+.service-page section.alt { background: #1e1f22; }
+.service-page p { font-size: 15px; line-height: 1.85; }
+.service-page .text-col p:last-child { margin-bottom: 0; }
+.service-page .side-photo { width: 100%; height: auto; display: block; }
+.service-page figure { margin: 0; }
+.service-page figcaption { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #9a9a9a; padding-top: 8px; }
+@media only screen and (max-width: 991px) { .service-page .side-photo, .service-page .text-col + div .twentytwenty-container { margin-top: 30px; } }
+
+/* Three across, as "What We Do" on the home page: photo, yellow title, a few lines, a link. */
+.type-box { margin-bottom: 30px; }
+.type-box img { width: 100%; height: auto; display: block; margin-bottom: 18px; }
+.type-box h3 { margin: 0 0 8px; }
+.type-box p { margin: 0 0 10px; }
+.type-box a.more { color: #FAB702; font-size: 12px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; }
+.type-box a.more:hover { text-decoration: underline; }
+.type-box .twentytwenty-container { margin-bottom: 18px; }
+
+ul.check-list { list-style: none; margin: 0; padding: 0; }
 ul.check-list li { position: relative; padding-left: 30px; margin-bottom: 11px; line-height: 1.65; }
 ul.check-list li:before {
 	content: "";
@@ -194,40 +183,15 @@ ul.check-list li:before {
 	border-width: 0 2px 2px 0;
 	transform: rotate(45deg);
 }
-.fact-box { background: rgba(0, 0, 0, .35); border: 1px solid rgba(255, 255, 255, .08); padding: 26px; }
-.fact-box h3 { margin-top: 0; }
-.fact-box .info-text { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; border-bottom: 1px solid rgba(255, 255, 255, .07); font-size: 14px; }
-.fact-box .info-text:last-of-type { border-bottom: 0; }
-.fact-box .info-text .title { color: #9a9a9a; }
-.fact-box .info-text .val { color: #eceff3; text-align: right; }
-.fact-box .btn-call { display: block; text-align: center; margin-top: 18px; }
-.fact-box .btn-line { display: block; text-align: center; margin-top: 10px; }
-@media only screen and (max-width: 991px) { .fact-box { margin-top: 30px; } }
 
-.photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-.photo-grid a { display: block; position: relative; overflow: hidden; aspect-ratio: 4 / 3; background: #222; }
-.photo-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
-.photo-grid a:hover img { transform: scale(1.04); }
-@media only screen and (max-width: 767px) { .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; } }
+/* Reviews: the home page's quote boxes, side by side. */
+.review-row .de_testi { height: 100%; margin-bottom: 24px; }
+.review-row .de_testi blockquote { height: 100%; position: relative; }
+.review-row .de_testi blockquote p { font-size: 15px; line-height: 1.75; font-weight: 400; }
+.reviews-link { text-align: center; margin: 14px 0 0; }
+.reviews-link a, .faq-item a { color: #FAB702; text-decoration: underline; text-underline-offset: 3px; }
 
-.project-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.project-card { display: block; background: #141517; border: 1px solid rgba(255, 255, 255, .06); color: #bbb !important; text-decoration: none !important; }
-.project-card img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
-.project-card .pc-body { padding: 18px 20px 20px; }
-.project-card h3 { margin: 0 0 6px; font-size: 16px; }
-.project-card p { margin: 0 0 10px; font-size: 14px; line-height: 1.6; }
-.project-card .more { color: #FAB702; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
-@media only screen and (max-width: 991px) { .project-cards { grid-template-columns: 1fr; } }
-
-.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; counter-reset: step; }
-.steps .step { position: relative; padding: 24px 22px; background: rgba(255, 255, 255, .03); border: 1px solid rgba(255, 255, 255, .07); }
-.steps .step:before { counter-increment: step; content: counter(step); display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #FAB702; color: #111; font-weight: 700; margin-bottom: 12px; }
-.steps .step h3 { font-size: 15px; margin: 0 0 8px; }
-.steps .step p { font-size: 14px; line-height: 1.7; margin: 0; }
-@media only screen and (max-width: 991px) { .steps { grid-template-columns: 1fr 1fr; } }
-@media only screen and (max-width: 575px) { .steps { grid-template-columns: 1fr; } }
-
-.faq-item { border-bottom: 1px solid rgba(255, 255, 255, .08); padding: 18px 0; }
+.faq-item { border-bottom: 1px solid rgba(255, 255, 255, .08); padding: 20px 0; }
+.faq-item:first-of-type { padding-top: 0; }
 .faq-item h3 { font-size: 16px; margin: 0 0 8px; letter-spacing: 2px; }
 .faq-item p { margin: 0; }
-.faq-item a, .service-section p a { color: #FAB702; text-decoration: underline; text-underline-offset: 3px; }
